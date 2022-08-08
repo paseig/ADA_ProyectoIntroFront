@@ -1,4 +1,4 @@
-var divs = ["card1", "card2", "card3", "card4", "card5", "card6"];
+var divs = ["chara1", "chara2", "chara3", "chara4", "chara5", "chara6"];
     var visibleDivClass = null;
     function divVisibility(divClass) {
       if(visibleDivClass === divClass) {

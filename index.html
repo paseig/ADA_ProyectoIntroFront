@@ -29,15 +29,16 @@
 
     <nav>
         <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-            <li><a href="#">Link 5</a></li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#obra">Sobre la obra</a></li>
+            <li><a href="#personajes">Personajes</a></li>
+            <li><a href="#manga">Manga</a></li>
+            <li><a href="#videos">Videos</a></li>
         </ul>
     </nav>
 
-    <section class="section">
+    <!-- sección 1 - sobre la obra -->
+    <section class="section" id="obra">
         <h3>Sobre la obra</h3>
         <div class="box-section"></div>
         <img src="../assets/img/Sintitulo.png" alt="">
@@ -53,36 +54,36 @@
         </p>
     </section>
 
-    <!-- Algunos personajes importantes -->
-    <section class="section">
+    <!-- sección 2 - personajes -->
+    <section class="section" id="personajes">
         <h3>Personajes</h3>
         <div class="box-section"></div>
         <div class="chara-container">
 
             <div class="nav-chara">
                 <a href="#" onclick="show('chara0');"></a>
-                <a href="#" onclick="show('chara1');">
+                <a href="#chara1" onclick="show('chara1');">
                     <div class="esp1">Ash<img class="jp1" src="./assets/img/chara01.svg" alt="Ash Lynx en katakana">
                     </div>
                 </a>
-                <a href="#" onclick="show('chara2');">
+                <a href="#chara2" onclick="show('chara2');">
                     <div class="esp2">Eiji<img class="jp2" src="./assets/img/chara02.svg" alt="Okumura Eiji en kanji">
                     </div>
                 </a>
-                <a href="#" onclick="show('chara3');">
+                <a href="#chara3" onclick="show('chara3');">
                     <div class="esp3">Dino<img class="jp3" src="./assets/img/chara03.svg"
                             alt="Dino Goldzine en katakana">
                     </div>
                 </a>
-                <a href="#" onclick="show('chara4');">
+                <a href="#chara4" onclick="show('chara4');">
                     <div class="esp4">Shorter<img class="jp4" src="./assets/img/chara04.svg"
                             alt="Shorter Wong en katakana"></div>
                 </a>
-                <a href="#" onclick="show('chara5');">
+                <a href="#chara5" onclick="show('chara5');">
                     <div class="esp5">Yut-Lung<img class="jp5" src="./assets/img/chara05.svg" alt="Yut-Lung en japonés">
                     </div>
                 </a>
-                <a href="#" onclick="show('chara6');">
+                <a href="#chara6" onclick="show('chara6');">
                     <div class="esp6">Sing<img class="jp6" src="./assets/img/chara06.svg"
                             alt="Sing Soo-Ling en katakana">
                     </div>
@@ -244,8 +245,8 @@
         </div>
     </section>
 
-    <!-- Galería -->
-    <section class="section">
+    <!-- sección 3 - manga -->
+    <section class="section" id="manga">
         <h3>Portadas</h3>
         <div class="box-section"></div>
         <p class="text-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fugit laboriosam iure
@@ -288,9 +289,8 @@
         </div>
     </section>
 
-    <!-- videos 
-    3 videos con descripción breve -->
-    <section class="section">
+    <!-- sección 4 - videos -->
+    <section class="section" id="videos">
         <h3>Openings & endings</h3>
         <div class="box-section"></div>
         <div class="videos">
