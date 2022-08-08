@@ -8,17 +8,22 @@
     <link rel="shortcut icon" href="./assets/img/favicon-pre.ico" type="image/x-icon">
     <title>FREEDOM - Página sobre Banana Fish</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="myScript.js"></script>
+    <script type="text/javascript" src="./js/myScript.js"></script>
 </head>
 
 <body>
     <header>
-        <img src="./assets/img/img.jpg" class="header__img">
+        <img src="./assets/img/img.png" class="header__img">
         <h1 class="title">FREEDOM</h1>
         <div class="box-header"></div>
-        <!-- <p class="esp">My soul is always with you</p> -->
-        <p class="jp" lang="ja">奪い合って汚し合って<br>
-            それでも守りたくて</p>
+        <p class="jp" lang="ja">独りじゃない と気づけた 僕の「昨日」も<br>
+            傷だらけでも立ち上がった 君の「今日」も<br>
+            生きたくても生きれなかった 誰かの「明日」も<br>
+            二度と離さないように歩こう<br>
+            際限ない犠牲を<br>
+            朦朧とした理想を<br>
+            もう無駄にしないようにと<br>
+            悲しみを切り刻んだ</p>
 
     </header>
 
@@ -35,15 +40,17 @@
     <section class="section">
         <h3>Sobre la obra</h3>
         <div class="box-section"></div>
-        <img src="./assets/img/Sintitulo.png" alt="">
-        <p class="text">Banana Fish es una serie de manga ilustrado por Akimi Yoshida. Fue publicado en la antigua
-            Bessatsu Shoujo Comic (actual Betsucomi) desde abril de 1985 hasta marzo de 1994.<br>
-            La obra fue reunida en 19 tomos recopilatorios y debió esperarse más de 20 años para que tuviera su versión
-            en la pantalla chica. Motivos por los cuales la historia fue modificada para encajar con problemáticas y
-            situaciones cotidianas actuales (por ejemplo la historia empieza durante la guerra de Vietnam, mientras que
-            en la adaptación al anime, sucede en la guerra de Afganistán).</p>
-        <p class="text">El estudio en cargado de la animación fue MAPPA, conocido por Yuri!!! on Ice, Jusutsu Kaisen y
-            la última temporada de Shingeki no Kyojin, entre otros trabajos.</p>
+        <img src="../assets/img/Sintitulo.png" alt="">
+        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates magnam ex nesciunt ratione
+            repudiandae saepe mollitia distinctio eveniet? Pariatur ut voluptate, quisquam quos provident quia.
+            <br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ea, officiis vero ipsum est aut
+            consectetur, recusandae hic molestiae dignissimos consequuntur unde eveniet perspiciatis. Dolore fuga quae
+            architecto commodi tempora excepturi provident dignissimos assumenda deserunt facilis porro omnis esse
+            quisquam quis illo, adipisci, dolor, quaerat quo optio itaque. Hic, id.
+        </p>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, aut?
+        </p>
     </section>
 
     <!-- Algunos personajes importantes -->
@@ -51,55 +58,235 @@
         <h3>Personajes</h3>
         <div class="box-section"></div>
         <div class="chara-container">
-            <nav class="nav-chara">
-                <ul class="ul-chara">
-                    <li class="li-chara"><a href="#" onclick="divVisibility('card1')">Ash</a></li>
-                    <li class="li-chara"><a href="#" onclick="divVisibility('card2')">Eiji</a></li>
-                    <li class="li-chara"><a href="#" onclick="divVisibility('card3')">Dino</a></li>
-                    <li class="li-chara"><a href="#" onclick="divVisibility('card4')">Shorter</a></li>
-                    <li class="li-chara"><a href="#" onclick="divVisibility('card5')">Yut-Lung</a></li>
-                    <li class="li-chara"><a href="#" onclick="divVisibility('card6')">Sing</a></li>
-                </ul>
-            </nav>
 
-            <div class="cards">
-                <div class="text">Hacé clic en algunos de los nombres de la barra la izquierda para saber más sobre
-                    ellos</div>
-                <div class="card1" style="display: none;">
-                    <img src="./assets/img/Sintitulo.png" alt="">
-                    <p class="card-name">Lorem ipsum</p>
-                </div>
-                <div class="card2" style="display: none;">
-                    <img src="./assets/img/Sintitulo.png" alt="">
-                    <p class="card-name">Lorem ipsum</p>
-                </div>
-                <div class="card3" style="display: none;">
-                    <img src="./3assets/img/Sintitulo.png" alt="">
-                    <p class="card-name">Lorem ipsum</p>
-                </div>
-                <div class="card4" style="display: none;">
-                    <img src="./assets/img/Sintitulo.png" alt="">
-                    <p class="card-name">Lorem ipsum</p>
-                </div>
-                <div class="card5" style="display: none;">
-                    <img src="./assets/img/Sintitulo.png" alt="">
-                    <p class="card-name">Lorem ipsum</p>
-                </div>
-                <div class="card6" style="display: none;">
-                    <img src="./assets/img/Sintitulo.png" alt="">
-                    <p class="card-name">Lorem ipsum</p>
+            <div class="nav-chara">
+                <a href="#" onclick="show('chara0');"></a>
+                <a href="#" onclick="show('chara1');">
+                    <div class="esp1">Ash<img class="jp1" src="./assets/img/chara01.svg" alt="Ash Lynx en katakana">
+                    </div>
+                </a>
+                <a href="#" onclick="show('chara2');">
+                    <div class="esp2">Eiji<img class="jp2" src="./assets/img/chara02.svg" alt="Okumura Eiji en kanji">
+                    </div>
+                </a>
+                <a href="#" onclick="show('chara3');">
+                    <div class="esp3">Dino<img class="jp3" src="./assets/img/chara03.svg"
+                            alt="Dino Goldzine en katakana">
+                    </div>
+                </a>
+                <a href="#" onclick="show('chara4');">
+                    <div class="esp4">Shorter<img class="jp4" src="./assets/img/chara04.svg"
+                            alt="Shorter Wong en katakana"></div>
+                </a>
+                <a href="#" onclick="show('chara5');">
+                    <div class="esp5">Yut-Lung<img class="jp5" src="./assets/img/chara05.svg" alt="Yut-Lung en japonés">
+                    </div>
+                </a>
+                <a href="#" onclick="show('chara6');">
+                    <div class="esp6">Sing<img class="jp6" src="./assets/img/chara06.svg"
+                            alt="Sing Soo-Ling en katakana">
+                    </div>
+                </a>
+            </div>
+
+            <!-- <div class="charas"> -->
+            <div id="chara0">Hacé clic sobre uno de los nombres para saber más sobre algunos de los personajes de la
+                serie</div>
+
+            <div id="chara1" style="display: none;">
+                <p class="txt"><b>Nombre:</b> Ash Lynx<br>
+                    <b>Katakana:</b> アッシュ・リンクス<br>
+                    <b>Nombre real:</b> Aslan Jade Callenreese<br>
+                    <b>Edad:</b> 14 en Private Opinion (spinoff), 15 en Angel Eyes, 17 en los episodios 1-13 del anime,
+                    18 desde el episodio 14 del anime en adelante<br>
+                    <b>Cumpleaños:</b> 12 de agosto de 1968 (manga)<br>
+                    12 de agosto del 2000 (anime)<br>
+                    <b>Altura:</b> 180 cm<br>
+                    <b>Color de cabello:</b> rubio<br>
+                    <b>Color de ojos:</b> verde jade<br>
+                    <b>Tipo de sangre:</b> 0 (anime)<br>
+                    <b>Nacionalidad:</b> Americano-irlandés<br>
+                    <b>Idiomas:</b> Inglés, francés (básico), japonés (muy poco)<br>
+                    <b>Debut en el anime:</b> Episodio 1<br>
+                    <b>Debut en el manga:</b> Volumen 1<br>
+                    <b>Actor de voz:</b> Uchida Yuma, Hanawa Manami (pequeño), Furusawa Tooru (CD drama)<br>
+                    <b>Actor en la obra de teatro:</b> Karatani Satoshi (2005, 2009), Nagai Itsuki (pequeño, 2005),
+                    Isomura Yousuke (2012), Mizue Kenta (2021)
+                </p>
+                <div class="chara-img">
+                    <h3 class="name">Ash Lynx</h3>
+                    <img class="photo" src="./assets/img/chara-img-01.jpg" alt="">
                 </div>
             </div>
+
+            <div id="chara2" style="display: none;">
+                <p class="txt"><b>Nombre:</b> Okumura Eiji<br>
+                    <b>Katakana:</b> 奥村英二<br>
+                    <b>Edad:</b> 17 en el spinoff, “Fly in the Sky”, 19 en el anime/manga, 28 en la secuela del manga,
+                    “Garden of the Light”<br>
+                    <b>Cumpleaños:</b> 1966 (manga), 1998 (anime)<br>
+                    <b>Altura:</b> 172 cm<br>
+                    <b>Color de cabello:</b> azabache<br>
+                    <b>Color de ojos:</b> marrón<br>
+                    <b>Tipo de sangre:</b> A+ (anime)<br>
+                    <b>Nacionalidad:</b> japonés<br>
+                    <b>Idiomas:</b> japonés, inglés<br>
+                    <b>Debut en el anime:</b> Episodio 1<br>
+                    <b>Debut en el manga:</b> Volumen 1<br>
+                    <b>Actor de voz:</b> Nojima Kenji, Inoue Kazuhiko (CD drama)<br>
+                    <b>Actor en la obra de teatro:</b> Saitou Junichirou (2005), Miyashita Yuuya (2009), Takeuchi Toshi
+                    (2012), Okamiya Kurumu (2021)
+
+                </p>
+                <div class="chara-img">
+                    <h3 class="name">Eiji Okumura</h3>
+                    <img class="photo" src="./assets/img/chara-img-02.jpg" alt="">
+                </div>
+            </div>
+
+            <div id="chara3" style="display: none;">
+                <p class="txt"><b>Nombre:</b> Dino Francis Goldzine<br>
+                    <b>Katakana:</b> ディノ・フランシス・ゴルツィネ<br>
+                    <b>Altura:</b> 178 cm<br>
+                    <b>Color de cabello:</b> dato desconocido<br>
+                    <b>Color de ojos:</b> ámbar<br>
+                    <b>Nacionalidad:</b> americano-francés<br>
+                    <b>Idiomas:</b> japonés, inglés<br>
+                    <b>Debut en el anime:</b> Episodio 1<br>
+                    <b>Debut en el manga:</b> Volumen 1<br>
+                    <b>Actor de voz:</b> Ichizuka Unshou (anime), Kawakubo Mayoshi (CD drama)<br>
+                    <b>Actor en la obra de teatro:</b> Tanaka Akito (2005), Sakai Takaharu (2009), Ichikawa Isamu
+                    (2012), Akaboshi Shouichirou
+                    (2021)
+                </p>
+                <div class="chara-img">
+                    <h3 class="name">Dino Golzine</h3>
+                    <img class="photo" src="./assets/img/chara-img-03.jpg" alt="">
+                </div>
+            </div>
+
+            <div id="chara4" style="display: none;">
+                <p class="txt"><b>Nombre:</b> Shorter Wong<br>
+                    <b>Katakana:</b> ショーター・ウォン<br>
+                    <b>Edad:</b> dato desconocido (se presume que entre 17-19 años)<br>
+                    <b>Cumpleaños:</b> dato desconocido<br>
+                    <b>Altura:</b> 183 cm<br>
+                    <b>Color de cabello:</b> púrpura<br>
+                    <b>Color de ojos:</b> ámbar<br>
+                    <b>Tipo de sangre:</b> B+<br>
+                    <b>Nacionalidad:</b> chino-americano<br>
+                    <b>Idiomas:</b> chino, inglés<br>
+                    <b>Debut en el anime:</b> Episodio 1<br>
+                    <b>Debut en el manga:</b> Volumen 1<br>
+                    <b>Actor de voz:</b> Furukawa Makoto (anime), Hashimoto Jun (CD Drama)<br>
+                    <b>Actor en la obra de teatro:</b> Furukawa Takao (2005, 2009), Kashiwagi Yuusuke (2012)
+                </p>
+                <div class="chara-img">
+                    <h3 class="name">Shorter Wong</h3>
+                    <img class="photo" src="./assets/img/chara-img-04.jpg" alt="">
+                </div>
+            </div>
+
+            <div id="chara5" style="display: none;">
+                <p class="txt"><b>Nombre:</b> Lee Yut-Lung<br>
+                    <b>Katakana:</b> 李月龍<br>
+                    <b>Edad:</b> 16<br>
+                    <b>Altura:</b> 172 cm<br>
+                    <b>Color de cabello:</b> azabache<br>
+                    <b>Color de ojos:</b> negros (manga), negro violáceo (anime)<br>
+                    <b>Nacionalidad:</b> británico-hongkonés<br>
+                    <b>Idiomas:</b> cantonés, inglés<br>
+                    <b>Debut en el anime:</b> Episodio 7<br>
+                    <b>Debut en el manga:</b> Volumen -<br>
+                    <b>Actor de voz:</b> Fukuyama Jun (anime), Ohki Yuu (BANANA FISH CD drama Part 1), Kaji Issei
+                    (BANANA FISH CD drama Part 2, BANANA FISH CD drama Part 3)<br>
+                    <b>Actor en la obra de teatro:</b> Saitou Junichirou (2005), Tabuchi Noriaki (2009), Kimura Atsushi
+                    (2012), Sana Hiroki (2021)
+                </p>
+                <div class="chara-img">
+                    <h3 class="name">Lee Yut-Lung</h3>
+                    <img class="photo" src="./assets/img/chara-img-05.jpg" alt="">
+                </div>
+            </div>
+
+            <div id="chara6" style="display: none;">
+                <p class="txt"><b>Nombre:</b> Sing Soo-Ling<br>
+                    <b>Katakana:</b> シン・スウ・リン<br>
+                    <b>Edad:</b> 14 en el anime/manga, 23 en la secuela del manga, “Garden of the Light”<br>
+                    <b>Altura:</b> 165 cm en el manga/anime, 191 cm en la secuela del manga, “Garden of the Light”<br>
+                    <b>Color de cabello:</b> Azul oscuro<br>
+                    <b>Color de ojos:</b> negros<br>
+                    <b>Tipo de sangre:</b> B+<br>
+                    <b>Nacionalidad:</b> chino-americano<br>
+                    <b>Idiomas:</b> chino, inglés<br>
+                    <b>Debut en el anime:</b> Episodio 9<br>
+                    <b>Debut en el manga:</b> Volumen 1<br>
+                    <b>Actor de voz: Chiba Shouya (anime), Azumi Reika (CD Drama)<br>
+                        <b>Actor en la obra de teatro: Umebayashi Ryota (2005), Ono Kenshou (2009), Oda Kazuaki (2012),
+                            Shiina Taizou (2021)<br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptatem deleniti quod
+                            aliquid dolorum quo vel accusamus unde quae, non neque facilis? Soluta eaque officiis
+                            voluptate sequi sunt doloremque recusandae officia vero corrupti magni earum, alias,
+                            perspiciatis architecto iusto cupiditate temporibus, consectetur iste. Odio tempore quisquam
+                            unde numquam eligendi error?<br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fuga vel alias numquam
+                            tenetur, placeat consequuntur vitae! Obcaecati, culpa iusto? Incidunt accusantium, harum
+                            neque, voluptatem corrupti itaque deserunt aperiam quia inventore quisquam pariatur ullam.
+                            Atque, error eaque consequatur a nesciunt commodi temporibus facere explicabo iusto mollitia
+                            placeat amet veniam pariatur.
+                </p>
+                <div class="chara-img">
+                    <h3 class="name">Sing Soo-Ling</h3>
+                    <img class="photo" src="./assets/img/chara-img-06.jpg" alt="">
+                </div>
+            </div>
+            <!-- </div> -->
         </div>
     </section>
 
-    <!-- ya ni me acuerdo de qué iba a tratarse esta sección
-        <section class="section">
-        <h3>Section 3 Title</h3>
+    <!-- Galería -->
+    <section class="section">
+        <h3>Portadas</h3>
         <div class="box-section"></div>
-        <img src="#" alt="">
-        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolorem totam voluptatem illo alias iusto ipsum amet, ex tenetur hic maxime  recusandae ad saepe quas!</p>
-    </section> -->
+        <p class="text-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fugit laboriosam iure
+            excepturi, sit ab eligendi praesentium, adipisci asperiores fuga odit iusto, explicabo voluptatem voluptates
+            dolorum quisquam quasi sequi? Reprehenderit beatae, hic deleniti ut nisi deserunt quaerat, aspernatur
+            necessitatibus delectus amet corrupti culpa eveniet et cum earum nostrum aperiam accusantium iusto aut, sint
+            repellat? Esse, magnam. Aliquid, at cumque quod tempora saepe accusantium nam non dolorem omnis
+            necessitatibus illum perferendis atque molestiae doloremque mollitia laudantium iure odio quibusdam facere.
+            Vitae, adipisci esse error omnis illo, deserunt aspernatur provident in optio, beatae quidem harum est
+            temporibus iure quisquam soluta voluptate doloremque.</p>
+        <div class="container">
+            <div class="cover">
+                <img src="./assets/img/bfmangaarg-01.jpg" alt="">
+                <p class="cover-caption">Lorem ipsum</p>
+            </div>
+            <div class="cover">
+                <img src="./assets/img/bfmangaarg-02.jpg" alt="">
+                <p class="cover-caption">Lorem ipsum</p>
+            </div>
+            <div class="cover">
+                <img src="./assets/img/bfmangaarg-03.jpg" alt="">
+                <p class="cover-caption">Lorem ipsum</p>
+            </div>
+            <div class="cover">
+                <img src="./assets/img/bfmangaarg-04.jpg" alt="">
+                <p class="cover-caption">Lorem ipsum</p>
+            </div>
+            <div class="cover">
+                <img src="./assets/img/bfmangaarg-05.jpg" alt="">
+                <p class="cover-caption">Lorem ipsum</p>
+            </div>
+            <div class="cover">
+                <img src="./assets/img/bfmangaarg-06.jpg" alt="">
+                <p class="cover-caption">Lorem ipsum</p>
+            </div>
+            <div class="cover">
+                <img src="./assets/img/bfmangaarg-07.jpg" alt="">
+                <p class="cover-caption">Lorem ipsum</p>
+            </div>
+        </div>
+    </section>
 
     <!-- videos 
     3 videos con descripción breve -->
@@ -134,54 +321,6 @@
                     allowfullscreen></iframe>
                 <h4 class="video-name">RED de Survive Said The Prophet</h3>
                     <p class="video-desc">Segunda canción de clausura</p>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Galería -->
-    <section class="section">
-        <h3>Portadas</h3>
-        <div class="box-section"></div>
-        <p class="text-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolorem totam voluptatem
-            illo
-            alias iusto ipsum amet, ex tenetur hic maxime recusandae ad saepe quas! Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Magnam dolorem totam voluptatem illo
-            alias iusto ipsum amet, ex tenetur hic maxime recusandae ad saepe quas! Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Magnam dolorem totam voluptatem illo
-            alias iusto ipsum amet, ex tenetur hic maxime recusandae ad saepe quas! Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Magnam dolorem totam voluptatem illo
-            alias iusto ipsum amet, ex tenetur hic maxime recusandae ad saepe quas! Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Magnam dolorem totam voluptatem illo
-            alias iusto ipsum amet, ex tenetur hic maxime recusandae ad saepe quas!</p>
-        <div class="container">
-            <div class="cover">
-                <img src="./assets/img/bfmangaarg-01.jpg" alt="">
-                <p class="cover-caption">Lorem ipsum</p>
-            </div>
-            <div class="cover">
-                <img src="./assets/img/bfmangaarg-02.jpg" alt="">
-                <p class="cover-caption">Lorem ipsum</p>
-            </div>
-            <div class="cover">
-                <img src="./assets/img/bfmangaarg-03.jpg" alt="">
-                <p class="cover-caption">Lorem ipsum</p>
-            </div>
-            <div class="cover">
-                <img src="./assets/img/bfmangaarg-04.jpg" alt="">
-                <p class="cover-caption">Lorem ipsum</p>
-            </div>
-            <div class="cover">
-                <img src="./assets/img/bfmangaarg-05.jpg" alt="">
-                <p class="cover-caption">Lorem ipsum</p>
-            </div>
-            <div class="cover">
-                <img src="./assets/img/bfmangaarg-06.jpg" alt="">
-                <p class="cover-caption">Lorem ipsum</p>
-            </div>
-            <div class="cover">
-                <img src="./assets/img/bfmangaarg-07.jpg" alt="">
-                <p class="cover-caption">Lorem ipsum</p>
             </div>
         </div>
     </section>
